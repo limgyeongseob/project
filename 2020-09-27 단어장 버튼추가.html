@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본어 단어장</title>
+  <style>
+    /* 위치설정 */
+    #div-table table, th, td{
+      width: 800px;
+      height: 50px;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+    }
+    h1{
+      text-align: center;
+      margin-top: 150px;
+      margin-left: -590px;
+    }
+    /* 글자 설정 */
+    th{
+      font-size: 1.5rem;
+      padding-right: 75px;
+    }
+    td{
+      font-size: 1.4rem;
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+    /* 표 디자인, 각 셀 크기 */
+    table{
+      border: 3px solid black;
+      border-collapse: collapse;
+    }
+    th{
+      border: 3px solid black;
+    }
+    td{
+      border: 1px solid black;
+    }
+    .td-size{
+      border-left: 3px solid black;
+    }
+    .th-size{
+      width: 1400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="big-box">
+    <input type="button" value="off" onclick="btn_off(this);">  <!--매개변수로 this를 넣어야지 잘 작동된다-->
+    <h1>명사</h1>
+    <div id="div-table">
+      <table>
+        <tr>
+          <th>단어</th> <th>읽는법</th> <th>활용</th> <th class="th-size">활용</th>
+        </tr>
+        <tr>
+          <td class="kan">可能性</td> <td class="td-size">かのうせい</td> <td class="td-size">가능성</td> <td class="td-size th-size">可能性がある</td>
+        </tr>
+        <tr>
+          <td class="kan">会社員</td> <td class="td-size">かいしゃいん</td> <td class="td-size">회사원</td> <td class="td-size th-size">私は会社員です</td>
+        </tr>
+        <tr>
+          <td class="kan">勉強</td> <td class="td-size">べんきょう</td> <td class="td-size">공부</td> <td class="td-size th-size">勉強しています</td>
+        </tr>
+        <tr>
+          <td class="kan">帽子</td> <td class="td-size">ぼうし</td> <td class="td-size">모자</td> <td class="td-size th-size">帽子はどこにある？</td>
+        </tr>
+        <tr>
+          <td class="kan">居酒屋</td> <td class="td-size">いざかや</td> <td class="td-size">이자카야,선술집</td> <td class="td-size th-size">居酒屋に行く？</td>
+        </tr>
+        <tr>
+          <td class="kan">方言</td> <td class="td-size">ほうげん</td> <td class="td-size">방언,사투리</td> <td class="td-size th-size">方言で言ってくれる？</td>
+        </tr>
+        <tr>
+          <td class="kan">宇宙</td> <td class="td-size">うちゅう</td> <td class="td-size">우주</td> <td class="td-size th-size">宇宙に行ってみたい</td>
+        </tr>
+        <tr>
+          <td class="kan">目</td> <td class="td-size">め</td> <td class="td-size">(사람)눈</td> <td class="td-size th-size">目が痛い</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 자바스크립트 -->
+  <script>
+    function btn_off(self){  //원래 있던 this를 self로 바꿔준다
+      let val = document.querySelectorAll('.kan');
+      if(self.value === 'off'){
+        self.value = 'on';
+
+        let kan01 = document.querySelectorAll('.kan');
+          for(let i = 0; i < kan01.length; i++){
+            kan01[i].style.color = 'white';
+          }
+      }
+      else{
+        self.value = 'off'
+
+        let kan01 = document.querySelectorAll('.kan');
+          for(let i = 0; i < kan01.length; i++){
+            kan01[i].style.color = 'black';
+          }
+      }
+    }
+      
+  </script>
+    
+</body>
+</html>
