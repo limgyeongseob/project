@@ -1,0 +1,97 @@
+ /* 위치설정 */
+ #div-table table, th, td{
+  width: 800px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  margin-top: 150px;
+  margin-left: -220px;
+}
+/* 글자 설정 */
+th{
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
+td{
+  font-size: 1.4rem;
+}
+h1{
+  font-size: 2.5rem;
+}
+/* 표 디자인, 각 셀 크기 */
+table{
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+th{
+  border: 3px solid black;
+}
+td{
+  border: 1px solid black;
+}
+.td-size{
+  border-left: 3px solid black;
+}
+.th-size{
+  width: 1400px;
+}
+/* 버튼 위치조정 */
+#btn01{
+  margin-left: 20px;
+  margin-right: -10px;  
+  margin-bottom: 7px;
+}
+#btn02{
+  margin-left: 20px;
+  margin-right: -10px;  
+  margin-bottom: 7px;
+}
+#btn03{
+  margin-left: 20px;
+  margin-right: -10px;  
+  margin-bottom: 7px;
+}
+#btn04{
+  margin-left: 20px;
+  margin-right: -10px;  
+  margin-bottom: 7px;
+}
+/* 링크 스타일 */
+a{
+  text-decoration: none;
+  color: black;
+}
+/* 한페이지에 만들기 */
+div.tab{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+div.tab button{
+  background-color: inherit;  /*배경색 상속*/
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+div.tab button:hover{
+  background-color: #ddd;
+}
+/* 마우스를 클릭했을때 색상 */
+div.tab button.active{
+  background-color: #ccc;
+}
+
+.tabcontent{
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
