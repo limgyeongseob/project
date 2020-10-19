@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본어 단어장</title>
+  <!-- css -->
+  <link rel="stylesheet" href="2020-10-19css4.css">
+</head>
+<body>
+  <div id="big-box">
+      
+    <div class="tab">
+      <button id="defaultOpen" class="tablinks" onclick="openVoca(event, 'dong')">동사</button>
+      <button class="tablinks" onclick="openVoca(event, 'myon')">명사</button>
+      <button class="tablinks" onclick="openVoca(event, 'na')">な형용사</button>
+      <button class="tablinks" onclick="openVoca(event, 'e')">い형용사</button>
+      <button class="tablinks" onclick="openVoca(event, 'bu')">부사</button>
+      <button class="tablinks" onclick="openVoca(event, 'ue')">의성어,의태어</button>
+      <button class="tablinks" onclick="openVoca(event, 'ka')">카타카나</button>
+      <button class="tablinks" onclick="openVoca(event, 'bok')">복합동사</button>
+    </div>
+
+    <div id="div-table">
+      <div id="dong" class="tabcontent">
+      <table>
+
+        <tr>
+          <th>단어
+            <input id="btn01" type="button" value="off" onclick="btn01_off(this);"> <!--매개변수로 this를 넣어야지 잘 작동된다-->
+          </th>
+          <th>읽는법
+            <input id="btn02" type="button" value="off" onclick="btn02_off(this);">
+          </th>
+          <th>뜻
+            <input id="btn03" type="button" value="off" onclick="btn03_off(this);">
+          </th>
+          <th class="th-size">활용
+            <input id="btn04" type="button" value="off" onclick="btn04_off(this);">
+          </th>
+        </tr>
+
+        <tr>
+          <td class="kan">食べる</td> <td class="td-size bal">たべる</td> <td class="td-size tut">먹다</td> <td class="td-size th-size hal">ご飯食べた？</td>
+        </tr>
+
+        <tr>
+          <td class="kan">走る</td> <td class="td-size bal">はしる</td> <td class="td-size tut">뛰다,달리다</td> <td class="td-size th-size hal">生きたいなら走れ</td>
+        </tr>
+
+        <tr>
+          <td class="kan">飲む</td> <td class="td-size bal">のむ</td> <td class="td-size tut">마시다</td> <td class="td-size th-size hal">水を飲む</td>
+        </tr>
+
+        <tr>
+          <td class="kan">焼く</td> <td class="td-size bal">やく</td> <td class="td-size tut">굽다</td> <td class="td-size th-size hal">肉を焼く</td>
+        </tr>
+
+        <tr>
+          <td class="kan">休む</td> <td class="td-size bal">やすむ</td> <td class="td-size tut">쉬다</td> <td class="td-size th-size hal">週末は休みます</td>
+        </tr>
+
+        <tr>
+          <td class="kan">読む</td> <td class="td-size bal">よむ</td> <td class="td-size tut">읽다</td> <td class="td-size th-size hal">本を読む</td>
+        </tr>
+
+        <tr>
+          <td class="kan">求める</td> <td class="td-size bal">もとめる</td> <td class="td-size tut">구하다</td> <td class="td-size th-size hal">こいぬを求める</td>
+        </tr>
+
+        <tr>
+          <td class="kan">投げる</td> <td class="td-size bal">なげる</td> <td class="td-size tut">던지다</td> <td class="td-size th-size hal">ボールを投げる</td>
+        </tr>
+
+      </table>
+      </div>
+
+      <div id="myon" class="tabcontent">
+        <table>
+          <tr>
+            <th>단어
+              <input id="btn01" type="button" value="off" onclick="btn01_off(this);"> <!--매개변수로 this를 넣어야지 잘 작동된다-->
+            </th>
+            <th>읽는법
+              <input id="btn02" type="button" value="off" onclick="btn02_off(this);">
+            </th>
+            <th>뜻
+              <input id="btn03" type="button" value="off" onclick="btn03_off(this);">
+            </th>
+            <th class="th-size">활용
+              <input id="btn04" type="button" value="off" onclick="btn04_off(this);">
+            </th>
+          </tr>
+  
+          <tr>
+            <td class="kan">可能性</td> <td class="td-size bal">かのうせい</td> <td class="td-size tut">가능성</td> <td class="td-size th-size hal">可能性がある</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">会社員</td> <td class="td-size bal">かいしゃいん</td> <td class="td-size tut">회사원</td> <td class="td-size th-size hal">私は会社員です</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">勉強</td> <td class="td-size bal">べんきょう</td> <td class="td-size tut">공부</td> <td class="td-size th-size hal">勉強しています</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">帽子</td> <td class="td-size bal">ぼうし</td> <td class="td-size tut">모자</td> <td class="td-size th-size hal">帽子はどこにある？</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">居酒屋</td> <td class="td-size bal">いざかや</td> <td class="td-size tut">이자카야,선술집</td> <td class="td-size th-size hal">居酒屋に行く？</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">方言</td> <td class="td-size bal">ほうげん</td> <td class="td-size tut">방언,사투리</td> <td class="td-size th-size hal">方言で言ってくれる？</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">宇宙</td> <td class="td-size bal">うちゅう</td> <td class="td-size tut">우주</td> <td class="td-size th-size hal">宇宙に行ってみたい</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">目</td> <td class="td-size bal">め</td> <td class="td-size tut">(사람)눈</td> <td class="td-size th-size hal">目が痛い</td>
+          </tr>
+  
+        </table>
+      </div>
+      
+      <div id="na" class="tabcontent">
+        <table>
+
+          <tr>
+            <th>단어
+              <input id="btn01" type="button" value="off" onclick="btn01_off(this);"> <!--매개변수로 this를 넣어야지 잘 작동된다-->
+            </th>
+            <th>읽는법
+              <input id="btn02" type="button" value="off" onclick="btn02_off(this);">
+            </th>
+            <th>뜻
+              <input id="btn03" type="button" value="off" onclick="btn03_off(this);">
+            </th>
+            <th class="th-size">활용
+              <input id="btn04" type="button" value="off" onclick="btn04_off(this);">
+            </th>
+          </tr>
+  
+          <tr>
+            <td class="kan">簡単な</td> <td class="td-size bal">かんたんな</td> <td class="td-size tut">간단한</td> <td class="td-size th-size hal">簡単な単語</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">複雑な</td> <td class="td-size bal">ふくざつな</td> <td class="td-size tut">복잡한</td> <td class="td-size th-size hal">複雑な地下鉄</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">親切な</td> <td class="td-size bal">しんせつな</td> <td class="td-size tut">친절한</td> <td class="td-size th-size hal">親切な人たち</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">不親切な</td> <td class="td-size bal">ふしんせつな</td> <td class="td-size tut">불친절한</td> <td class="td-size th-size hal">不親切な人たち</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">幸福な</td> <td class="td-size bal">こうふくな</td> <td class="td-size tut">행복한</td> <td class="td-size th-size hal">幸福な人生</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">正確な</td> <td class="td-size bal">せいかくな</td> <td class="td-size tut">정확한</td> <td class="td-size th-size hal">正確な計算がほしいです</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">有名な</td> <td class="td-size bal">ゆうめいな</td> <td class="td-size tut">유명한</td> <td class="td-size th-size hal">有名な芸能人ですか？</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">自由な</td> <td class="td-size bal">じゆうな</td> <td class="td-size tut">자유로운</td> <td class="td-size th-size hal">自由な動物たち</td>
+          </tr>
+  
+        </table>
+      </div>
+
+      <div id="e" class="tabcontent">
+        <table>
+
+          <tr>
+            <th>단어
+              <input id="btn01" type="button" value="off" onclick="btn01_off(this);"> <!--매개변수로 this를 넣어야지 잘 작동된다-->
+            </th>
+            <th>읽는법
+              <input id="btn02" type="button" value="off" onclick="btn02_off(this);">
+            </th>
+            <th>뜻
+              <input id="btn03" type="button" value="off" onclick="btn03_off(this);">
+            </th>
+            <th class="th-size">활용
+              <input id="btn04" type="button" value="off" onclick="btn04_off(this);">
+            </th>
+          </tr>
+  
+          <tr>
+            <td class="kan">大きい</td> <td class="td-size bal">おおきい</td> <td class="td-size tut">큰, 크다</td> <td class="td-size th-size hal">モニターが大きい</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">小さい</td> <td class="td-size bal">ちいさい</td> <td class="td-size tut">작은, 작다</td> <td class="td-size th-size hal">小さいのをください</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">広い</td> <td class="td-size bal">ひろい</td> <td class="td-size tut">넓은, 넓다</td> <td class="td-size th-size hal">広い家に住みたい</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">狭い</td> <td class="td-size bal">せまい</td> <td class="td-size tut">좁은, 좁다</td> <td class="td-size th-size hal">ここは狭すぎる</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">多い</td> <td class="td-size bal">おおい</td> <td class="td-size tut">많은, 많다</td> <td class="td-size th-size hal">ごみが多い</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">少ない</td> <td class="td-size bal">すくない</td> <td class="td-size tut">적은, 적다</td> <td class="td-size th-size hal">ご飯が少ないです</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">涼しい</td> <td class="td-size bal">すずしい</td> <td class="td-size tut">시원한, 시원하다</td> <td class="td-size th-size hal">頂上は涼しいです</td>
+          </tr>
+  
+          <tr>
+            <td class="kan">暖かい</td> <td class="td-size bal">あたたかい</td> <td class="td-size tut">따뜻한, 따뜻하다</td> <td class="td-size th-size hal">暖かいおかずをください</td>
+          </tr>
+  
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자바스크립트 -->
+  <script src="2020-10-14js.js"></script>
+    
+</body>
+</html>
